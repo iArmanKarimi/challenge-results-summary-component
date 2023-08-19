@@ -34,11 +34,86 @@ body {
 	background-color: var(--color-white);
 }
 
+h1 {
+	font-size: 1.25rem;
+}
+h2 {
+	font-size: 1.2rem;
+}
+h3 {
+	font-size: 1.125rem;
+}
+h4 {
+	font-size: 1.1rem;
+}
+h5 {
+	font-size: 1rem;
+}
+
 .result-card {
 	display: flex;
 	flex-direction: column;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+}
+
+.result-card > section:first-child {
+	padding: 1.5rem 3rem;
+	padding-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 2rem;
+	border-top-left-radius: unset;
+	border-top-right-radius: unset;
+	color: var(--color-white);
+	background: linear-gradient(
+		to bottom,
+		var(--gradient-light-slate-blue-bg),
+		var(--gradient-light-royal-blue-bg)
+	);
+}
+
+.result-card > section:first-child > * {
+	text-align: center;
+}
+
+.result-card > section:first-child > h4 {
+	color: lightgray;
+}
+
+.result-card > section:first-child > div.score-container {
+	width: 7.8rem;
+	height: 7.8rem;
+	margin: 1.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	/* fixme */
+	background: linear-gradient(
+		to bottom,
+		var(--gradient-violet-blue-circle),
+		var(--gradient-persian-blue-circle)
+	);
+}
+
+.result-card > section:first-child > div.score-container .value {
+	font-size: 3rem;
+}
+
+.result-card > section:first-child > div.score-container .overall {
+	color: hsla(0, 0%, 100%, 0.4);
+}
+
+.result-card > section:first-child .feedback > p {
+	color: rgb(191, 191, 191);
+	margin: 0.5rem 0;
+}
+
+.result-card > section:last-child {
 }
 
 .alert {
