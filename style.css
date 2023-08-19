@@ -143,6 +143,16 @@ h5 {
 	font-size: 1rem;
 	background-color: var(--color-dark-gray-blue);
 }
+.result-card > section:last-child button:hover {
+	background: linear-gradient(
+		to bottom,
+		var(--gradient-light-slate-blue-bg),
+		var(--gradient-light-royal-blue-bg)
+	);
+}
+.result-card > section:last-child button:active {
+	background: var(--color-dark-gray-blue);
+}
 
 .alert {
 	padding: 0.7rem 0.9rem;
