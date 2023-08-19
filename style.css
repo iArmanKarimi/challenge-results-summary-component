@@ -134,6 +134,16 @@ h5 {
 	gap: 1rem;
 }
 
+.result-card > section:last-child button {
+	width: 100%;
+	height: 3rem;
+	color: white;
+	border: unset;
+	border-radius: 2rem;
+	font-size: 1rem;
+	background-color: var(--color-dark-gray-blue);
+}
+
 .alert {
 	padding: 0.7rem 0.9rem;
 	height: 2rem;
