@@ -199,7 +199,39 @@ h5 {
 - Desktop: 1440px
 */
 @media screen and (min-width: 376px) {
+	:root {
+		font-size: 18px;
+	}
+	body {
+		height: 100vh;
+		padding: 0 5vw;
+		align-items: center;
+		/* justify-content: center; */
+	}
+
 	.result-card {
+		margin-inline: auto;
+		flex-direction: row;
+		border-radius: 1.5rem;
 		box-shadow: 8px 8px 20px 5px var(--color-pale-blue);
+	}
+
+	.result-card > section {
+		width: 50%;
+		box-sizing: border-box;
+	}
+
+	.result-card > section:first-child {
+		border-radius: inherit;
+		max-width: 25rem;
+	}
+
+	.result-card > section:first-child > div.score-container {
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.result-card > section:last-child {
+		min-width: 15rem;
 	}
 }
